@@ -2,14 +2,11 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(./home\ page.jpg);
+    background-image: url(./home.jpg);
+    background-size: cover;
     
     
-}
-nav{
-    text-align: center;
-    color:black;
-    position: relative;
+    
     
 }
 
@@ -19,7 +16,7 @@ nav{
 }
 #goHome{
     text-decoration: none;
-    color: black;
+    color: blue;
 }
 #homePage {
     text-align: center;
@@ -28,7 +25,8 @@ nav{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color:black;
+    color: blue;
+    margin-top: 15%;
     
 }
 #homePage h1 {
@@ -44,7 +42,9 @@ nav{
 
 .controls {
     padding: 10px;
-    background-color:pink;
+    background-image: url(./home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #artContainer {
@@ -66,4 +66,9 @@ nav{
 .artwork img {
     max-width: 100%;
     height: auto;
+}
+#viewGallery{
+    background-color:red;
+    color:white;
+    margin: 0;
 }
