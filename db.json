@@ -5,47 +5,42 @@
             "title": "Sunset Serenity",
             "artist":"Elena Ramirez",
             "location":"Central Park",
-            "image":"sunset.jpg"
+            "image":"https://images.saatchiart.com/saatchi/1085747/art/5291059/4360875-HSC00001-32.jpg"
         },
         {
             "id":2 ,
             "title": "Urban Geometry",
             "artist":"Kenji Tanaka",
             "location":"City Hall Plaza",
-            "image":"geometry.jpg"
-          
+            "image":"https://artlogic-res.cloudinary.com/w_1200,c_limit,f_auto,fl_lossy,q_auto/ws-kushfineartltd/usr/images/artworks/main_image/items/57/570548f9fffd4ec495a0611d3f07cd2b/urban-geometry_oil-on-canvas_v.kush-1160.jpg?focal=49,51"
         },
         {
             "id":3 ,
             "title": "Whispering Woods",
             "artist":"Aisha Khan",
             "location":"Forest Trail",
-            "image":"woods.jpg"
-        
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzWOw1NQctqTuc7kIXKX_eKXpmTGeeSHJZaQ&s"        
         },
         {
             "id":4 ,
             "title": "Crimson Woods",
             "artist":"Ricardo Silver",
             "location":"Botanical Gardens",
-            "image":"bloom.jpg"
-        
+             "image":"https://artlovers-media-upload2.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2024/04/16000259/Crimson-Woods-small-1-800x598.jpg"        
         },
         {
             "id":5 ,
             "title": "Oceans Embrace",
             "artist":"Sophie Dubois",
             "location":"Coastal Viewpoint",
-            "image":"ocean.jpg"
-        
+             "image":"https://images.saatchiart.com/saatchi/1501905/art/9354825/8417933-HUHQNOVE-7.jpg"
         },
         {
             "id":6 ,
             "title": "Starlight Dance",
             "artist":"Omar Hassan",
             "location":"Observatory Hill",
-            "image":"starlight.jpg"
-        
+             "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfMkvZS4W8_C6Spl8ek-PcsXEXy1Xx8W2Gg&s"
         }
     ]
 }
