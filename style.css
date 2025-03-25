@@ -2,24 +2,24 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-image: url(./home\ page.jpg);
     
     
 }
 nav{
-    text-align: left;
-    background-color:pink;
-    color: white;
+    text-align: center;
+    color:black;
     position: relative;
-    z-index: 10;
+    
 }
-nav h2{
-    margin: 0;
-}
+
 .page{
     padding: 20px;
-    margin-top: 100px;
     position: relative;
+}
+#goHome{
+    text-decoration: none;
+    color: black;
 }
 #homePage {
     text-align: center;
@@ -28,9 +28,8 @@ nav h2{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
-    color: white;
-    margin-bottom: 50px;
+    color:black;
+    
 }
 #homePage h1 {
     font-size: 2.5em;

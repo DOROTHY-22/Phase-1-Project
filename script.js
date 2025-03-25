@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const artContainer = document.getElementById('artContainer');
     const artistFilter = document.getElementById('artistFilter');
     const toggleViewButton = document.getElementById('toggleView');
+    const goHome = document.getElementById('goHome')
     let artworks = [];
 
     // Fetch Artworks from JSON Server
@@ -40,8 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleViewButton.addEventListener('click', () => {
         artContainer.classList.toggle('list-view');
     });
-
-        // View Gallery Button (Event Listener 3)
+    
+    goHome.addEventListener('click',(event) =>{
+    event.preventDefault();
+    galleryPage.style.display = 'none';
+    homePage.style.display = 'block';
+});
+        // View Gallery Button (Event Listener 4)
     viewGalleryButton.addEventListener('click', () => {
         homePage.style.display = 'none';
         galleryPage.style.display = 'block';
