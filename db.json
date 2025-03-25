@@ -61,28 +61,28 @@
       "title": "Desert Dreams",
       "artist": "Karim Aziz",
       "location": "Desert Oasis",
-      "image": ""
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcR7SknEvTgKhcbjlfcC3W_hN2o45ZHpOzlA&s"
     },
     {
       "id": 10,
       "title": "Neon Cityscape",
       "artist": "Maya Patel",
       "location": "Metropolitan Hub",
-      "image": "cityscape.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw8jVqwfP0NN-Best1b4U8GLtmcklj60soJw&s"
     },
     {
       "id": 11,
       "title": "Autumn Hues",
       "artist": "David Chen",
       "location": "Autumn Park",
-      "image": "autumn.jpg"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1syShgBSLNrGyM7nC_6eQoRrdI6qwqSw34w&s"
     },
     {
       "id": 12,
       "title": "Winter Solace",
       "artist": "Nadia Sokolov",
       "location": "Snowy Village",
-      "image": "winter.jpg"
+      "image": "https://render.fineartamerica.com/images/images-new-artwork/images/artworkimages/medium/1/winter-solstice-donald-maier.jpg"
     }
         
     ]
