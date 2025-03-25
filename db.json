@@ -1,0 +1,43 @@
+{
+    "artworks":[
+        {
+            "id": ,
+            "title": "",
+            "artist":"",
+            "location":"",
+            "image":""
+        },
+        {
+            "id": ,
+            "title": "",
+            "artist":"",
+            "location":"",
+            "image":""
+          
+        },
+        {
+            "id": ,
+            "title": "",
+            "artist":"",
+            "location":"",
+            "image":""
+        
+        },
+        {
+            "id": ,
+            "title": "",
+            "artist":"",
+            "location":"",
+            "image":""
+        
+        },
+        {
+            "id": ,
+            "title": "",
+            "artist":"",
+            "location":"",
+            "image":""
+        
+        }
+    ]
+}
