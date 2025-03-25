@@ -1,6 +1,7 @@
+#Phase-1-Project
 # My Art Gallery
 
-**Author:** [Your Name]
+**Author:** [DOROTHY CHEPKOECH CHIRCHIR]
 
 **Description:**
 
@@ -50,6 +51,6 @@ My Art Gallery is a single-page web application that allows users to explore a c
 
 **Copyright and License Information:**
 
-Copyright (c) [Year] [Your Name]
+Copyright (c) [2025] [DOROTHY CHEPKOECH CHIRCHIR]
 
-This project is licensed under the [License Name] License. (e.g., MIT License, Apache License 2.0). If you want to use the MIT license, you can add the following to your Readme:# Phase-1-Project
+This project is licensed under the [MIT] License. (e.g., MIT License, Apache License 2.0). If you want to use the MIT license, you can add the following to your Readme:# Phase-1-Project
