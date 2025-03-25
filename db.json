@@ -1,42 +1,50 @@
 {
     "artworks":[
         {
-            "id": ,
-            "title": "",
-            "artist":"",
-            "location":"",
-            "image":""
+            "id": 1,
+            "title": "Sunset Serenity",
+            "artist":"Elena Ramirez",
+            "location":"Central Park",
+            "image":"sunset.jpg"
         },
         {
-            "id": ,
-            "title": "",
-            "artist":"",
-            "location":"",
-            "image":""
+            "id":2 ,
+            "title": "Urban Geometry",
+            "artist":"Kenji Tanaka",
+            "location":"City Hall Plaza",
+            "image":"geometry.jpg"
           
         },
         {
-            "id": ,
-            "title": "",
-            "artist":"",
-            "location":"",
-            "image":""
+            "id":3 ,
+            "title": "Whispering Woods",
+            "artist":"Aisha Khan",
+            "location":"Forest Trail",
+            "image":"woods.jpg"
         
         },
         {
-            "id": ,
-            "title": "",
-            "artist":"",
-            "location":"",
-            "image":""
+            "id":4 ,
+            "title": "Crimson Woods",
+            "artist":"Ricardo Silver",
+            "location":"Botanical Gardens",
+            "image":"bloom.jpg"
         
         },
         {
-            "id": ,
-            "title": "",
-            "artist":"",
-            "location":"",
-            "image":""
+            "id":5 ,
+            "title": "Oceans Embrace",
+            "artist":"Sophie Dubois",
+            "location":"Coastal Viewpoint",
+            "image":"ocean.jpg"
+        
+        },
+        {
+            "id":6 ,
+            "title": "Starlight Dance",
+            "artist":"Omar Hassan",
+            "location":"Observatory Hill",
+            "image":"starlight.jpg"
         
         }
     ]
