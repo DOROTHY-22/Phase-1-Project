@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const homePage =document.getElementById('homePage');
+    const galleryPage = document.getElementById('galleryPage');
+    const viewGalleryButton = document.getElementById('viewGallery');
     const artContainer = document.getElementById('artContainer');
     const artistFilter = document.getElementById('artistFilter');
     const toggleViewButton = document.getElementById('toggleView');
@@ -38,7 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
         artContainer.classList.toggle('list-view');
     });
 
-    // Mouseover Artwork (Event Listener 3)
+        // View Gallery Button (Event Listener 3)
+    viewGalleryButton.addEventListener('click', () => {
+        homePage.style.display = 'none';
+        galleryPage.style.display = 'block';
+        fetchArtworks();
+    });
+
+    // Mouseover Artwork (Event Listener 4)
     artContainer.addEventListener('mouseover', (event) => {
         if (event.target.classList.contains('artwork')) {
             event.target.style.backgroundColor = 'red';
@@ -47,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     artContainer.addEventListener('mouseout', (event) => {
       if (event.target.classList.contains('artwork')) {
-        event.target.style.backgroundColor = 'navyblue';
+        event.target.style.backgroundColor = 'skyblue';
       }
     });
 
