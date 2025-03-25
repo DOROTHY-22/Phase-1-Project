@@ -41,6 +41,49 @@
             "artist":"Omar Hassan",
             "location":"Observatory Hill",
              "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfMkvZS4W8_C6Spl8ek-PcsXEXy1Xx8W2Gg&s"
-        }
+        },
+        {
+            "id": 7,
+      "title": "Golden Fields",
+      "artist": "Li Wei",
+      "location": "Countryside Farm",
+      "image": "https://img.artpal.com/992591/4-20-12-14-6-9-37m.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Misty Mountains",
+      "artist": "Isabella Rossi",
+      "location": "Mountain Range",
+      "image": "https://media.posterlounge.com/img/products/760000/757600/757600_poster.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Desert Dreams",
+      "artist": "Karim Aziz",
+      "location": "Desert Oasis",
+      "image": ""
+    },
+    {
+      "id": 10,
+      "title": "Neon Cityscape",
+      "artist": "Maya Patel",
+      "location": "Metropolitan Hub",
+      "image": "cityscape.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Autumn Hues",
+      "artist": "David Chen",
+      "location": "Autumn Park",
+      "image": "autumn.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Winter Solace",
+      "artist": "Nadia Sokolov",
+      "location": "Snowy Village",
+      "image": "winter.jpg"
+    }
+        
     ]
 }
