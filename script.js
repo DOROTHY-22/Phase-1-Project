@@ -41,13 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mouseover Artwork (Event Listener 3)
     artContainer.addEventListener('mouseover', (event) => {
         if (event.target.classList.contains('artwork')) {
-            event.target.style.backgroundColor = '#f0f0f0';
+            event.target.style.backgroundColor = 'red';
         }
     });
 
     artContainer.addEventListener('mouseout', (event) => {
       if (event.target.classList.contains('artwork')) {
-        event.target.style.backgroundColor = 'white';
+        event.target.style.backgroundColor = 'navyblue';
       }
     });
 
