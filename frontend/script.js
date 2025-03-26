@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch Artworks from JSON Server
     function fetchArtworks() {
-        fetch('http://localhost:3000/artworks')
+        fetch('https://phase-1-project-backend.onrender.com/artworks')
             .then(response => response.json())
             .then(data => {
                 artworks = data;
