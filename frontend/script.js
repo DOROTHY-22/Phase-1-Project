@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display Artworks in the gallery page
     function displayArtworks(artworksToDisplay) {
+        console.log("Displaying artworks:", artworksToDisplay);
         artContainer.innerHTML = artworksToDisplay.map(artwork => `
             <div class="artwork">
                 <img src="${artwork.image}" alt="${artwork.title}">
