@@ -53,15 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryPage.style.display = 'block';
         fetchArtworks();
     });
-    const artworkElements = document.querySelectorAll('.artwork');
-        artworkElements.forEach(artworkElement => {
-            artworkElement.addEventListener('mouseover', () => {
-                const artworkId = parseInt(artworkElement.dataset.artworkId);
-                const selectedArtwork = artworks.find(artwork => artwork.id === artworkId);
-                if (selectedArtwork) {
-                    displayArtworkDetails(selectedArtwork);
-                }
-            });
 
     // Mouseover Artwork (Event Listener 4)
     artContainer.addEventListener('mouseover', (event) => {
@@ -75,6 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
         event.target.style.backgroundColor = 'pink';
       }
     });
+    const artworkElements = document.querySelectorAll('.artwork');
+        artworkElements.forEach(artworkElement => {
+            artworkElement.addEventListener('mouseover', () => {
+                const artworkId = parseInt(artworkElement.dataset.artworkId);
+                const selectedArtwork = artworks.find(artwork => artwork.id === artworkId);
+                if (selectedArtwork) {
+                    displayArtworkDetails(selectedArtwork);
+                }
+            });
 
     fetchArtworks();
         });
