@@ -23,9 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch Artworks for the gallery page
     function fetchArtworks() {
+        console.log("Fetching Artworks..."); 
         fetch('https://phase-1-project-backend.onrender.com/artworks')
             .then(response => response.json())
             .then(data => {
+                console.log("Artworks data:", data); 
                 artworks = data;
                 displayArtworks(artworks);
             });
@@ -65,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navViewGallery.addEventListener('click', (event) => { 
         event.preventDefault();
         console.log("View Gallery button clicked!"); 
-
+        console.log("Gallery Page element:", galleryPage); 
         galleryPage.style.display = 'block';
         fetchArtworks();
     });
