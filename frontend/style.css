@@ -36,8 +36,8 @@ nav button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
 }
-footer &copy {
-    align-items: center;
+footer {
+    text-align: center;
 }
 
 .controls {
