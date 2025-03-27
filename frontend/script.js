@@ -66,6 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
         event.target.style.backgroundColor = 'pink';
       }
     });
+    artContainer.addEventListener('mouseover',(event)=> {
+        if(event.target.classList.contains('artwork')){
+            
+        }
+    })
     
     fetchArtworks();
         });
