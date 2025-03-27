@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const artSlider = document.getElementById('artSlider');
-    const galleryPage = document.getElementById('navViewGallery');
+    const galleryPage = document.getElementById('galleryPage');
     const goHome = document.getElementById('goHome');
     const artContainer = document.getElementById('artContainer');
     const artistFilter = document.getElementById('artistFilter');
     const toggleViewButton = document.getElementById('toggleView');
+    const navViewGallery = document.getElementById('navViewGallery');
     let artworks = [];
 
     // Fetch Artworks for the slider
