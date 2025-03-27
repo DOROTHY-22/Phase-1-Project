@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const artContainer = document.getElementById('artContainer');
     const artistFilter = document.getElementById('artistFilter');
     const toggleViewButton = document.getElementById('toggleView');
-    const navViewGallery = document.getElementById('navViewGallery');
+    const viewGalleryButton = document.getElementById('viewGallery');
+
     let artworks = [];
 
     // Fetch Artworks for the slider
@@ -65,13 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // View Gallery click event
-    navViewGallery.addEventListener('click', (event) => { 
-        event.preventDefault();
-        console.log("View Gallery button clicked!"); 
-        console.log("Gallery Page element:", galleryPage); 
+    viewGalleryButton.addEventListener('click', () => {
+        homePage.style.display = 'none';
         galleryPage.style.display = 'block';
         fetchArtworks();
-        console.log("event listener worked !");
     });
 
     // Mouseover Artwork
