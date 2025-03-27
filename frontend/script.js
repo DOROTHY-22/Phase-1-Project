@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const homePage =document.getElementById('homePage');
+    const homePage = document.getElementById('homePage');
     const galleryPage = document.getElementById('galleryPage');
     const viewGalleryButton = document.getElementById('viewGallery');
     const artContainer = document.getElementById('artContainer');
     const artistFilter = document.getElementById('artistFilter');
     const toggleViewButton = document.getElementById('toggleView');
-    const goHome = document.getElementById('goHome')
+    const goHome = document.getElementById('goHome');
     let artworks = [];
 
     // Fetch Artworks from JSON Server
@@ -21,23 +21,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // Display Artworks
     function displayArtworks(artworksToDisplay) {
         artContainer.innerHTML = artworksToDisplay.map(artwork => `
-            <div class="artwork">
+            <div class="artwork" data-artwork-id="${artwork.id}">
                 <img src="${artwork.image}" alt="${artwork.title}">
                 <h2>${artwork.title}</h2>
                 <p>Artist: ${artwork.artist}</p>
                 <p>Location: ${artwork.location}</p>
             </div>
         `).join('');
-    }
-    const artworkElements = document.querySelectorAll('.artwork');
-    artworkElements.forEach(artworkElement => {
-        artworkElement.addEventListener('click', () => {
-            const artworkId = parseInt(artworkElement.dataset.artworkId);
-            const selectedArtwork = artworks.find(artwork => artwork.id === artworkId);
-            if (selectedArtwork) {
-                displayArtworkDetails(selectedArtwork);
-            }
+
+        // Add Mouseover Event Listener to Each Artwork
+        const artworkElements = document.querySelectorAll('.artwork');
+        artworkElements.forEach(artworkElement => {
+            artworkElement.addEventListener('mouseover', () => {
+                const artworkId = parseInt(artworkElement.dataset.artworkId);
+                const selectedArtwork = artworks.find(artwork => artwork.id === artworkId);
+                if (selectedArtwork) {
+                    displayArtworkDetails(selectedArtwork);
+                }
+            });
         });
+    }
+
+    // Function to Display Artwork Details
+    function displayArtworkDetails(artwork) {
+        const detailsContainer = document.createElement('div');
+        detailsContainer.innerHTML = `
+            <h2>${artwork.title}</h2>
+            <p>Artist: ${artwork.artist}</p>
+            <p>Location: ${artwork.location}</p>
+            <p>${artwork.details}</p>
+        `;
+        artContainer.innerHTML = '';
+        artContainer.appendChild(detailsContainer);
+    }
+
     // Filter by Artist (Event Listener 1)
     artistFilter.addEventListener('input', () => {
         const artist = artistFilter.value.toLowerCase();
@@ -49,30 +66,31 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleViewButton.addEventListener('click', () => {
         artContainer.classList.toggle('list-view');
     });
-    
-    goHome.addEventListener('click',(event) =>{
-    event.preventDefault();
-    galleryPage.style.display = 'none';
-    homePage.style.display = 'block';
-});
-        // View Gallery Button (Event Listener 4)
+
+    goHome.addEventListener('click', (event) => {
+        event.preventDefault();
+        galleryPage.style.display = 'none';
+        homePage.style.display = 'block';
+    });
+
+    // View Gallery Button (Event Listener 4)
     viewGalleryButton.addEventListener('click', () => {
         homePage.style.display = 'none';
         galleryPage.style.display = 'block';
         fetchArtworks();
     });
 
-    // Mouseover Artwork (Event Listener 4)
-    artContainer.addEventListener('mouseover', (event) => {
-        if (event.target.classList.contains('artwork')) {
-            event.target.style.backgroundColor = 'white';
-        }
-    });
+    // Mouseover Artwork (Event Listener 4) - Removed (Handled in displayArtwork Function)
 
     artContainer.addEventListener('mouseout', (event) => {
-      if (event.target.classList.contains('artwork')) {
-        event.target.style.backgroundColor = 'pink';
-      }
+        if (event.target.classList.contains('artwork')) {
+            event.target.style.backgroundColor = 'pink'; // Reset to default or original background color
+        }
+    });
+    artContainer.addEventListener('mouseover',(event)=>{
+        if (event.target.classList.contains('artwork')){
+            event.target.style.backgroundColor = 'white';
+        }
     });
 
     fetchArtworks();
