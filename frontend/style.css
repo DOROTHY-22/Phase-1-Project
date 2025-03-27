@@ -15,7 +15,7 @@ nav {
 }
 
 nav button {
-    color: white
+    color: white;
     background-color:red ;
     text-decoration: none;
     padding: 8px 15px;
