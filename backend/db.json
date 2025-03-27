@@ -1,89 +1,100 @@
 {
-    "artworks":[
-        {
-            "id": 1,
-            "title": "Sunset Serenity",
-            "artist":"Elena Ramirez",
-            "location":"Central Park",
-            "image":"https://images.saatchiart.com/saatchi/1085747/art/5291059/4360875-HSC00001-32.jpg"
-        },
-        {
-            "id":2 ,
-            "title": "Urban Geometry",
-            "artist":"Kenji Tanaka",
-            "location":"City Hall Plaza",
-            "image":"https://artlogic-res.cloudinary.com/w_1200,c_limit,f_auto,fl_lossy,q_auto/ws-kushfineartltd/usr/images/artworks/main_image/items/57/570548f9fffd4ec495a0611d3f07cd2b/urban-geometry_oil-on-canvas_v.kush-1160.jpg?focal=49,51"
-        },
-        {
-            "id":3 ,
-            "title": "Whispering Woods",
-            "artist":"Aisha Khan",
-            "location":"Forest Trail",
-            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzWOw1NQctqTuc7kIXKX_eKXpmTGeeSHJZaQ&s"        
-        },
-        {
-            "id":4 ,
-            "title": "Crimson Woods",
-            "artist":"Ricardo Silver",
-            "location":"Botanical Gardens",
-             "image":"https://artlovers-media-upload2.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2024/04/16000259/Crimson-Woods-small-1-800x598.jpg"        
-        },
-        {
-            "id":5 ,
-            "title": "Oceans Embrace",
-            "artist":"Sophie Dubois",
-            "location":"Coastal Viewpoint",
-             "image":"https://images.saatchiart.com/saatchi/1501905/art/9354825/8417933-HUHQNOVE-7.jpg"
-        },
-        {
-            "id":6 ,
-            "title": "Starlight Dance",
-            "artist":"Omar Hassan",
-            "location":"Observatory Hill",
-             "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfMkvZS4W8_C6Spl8ek-PcsXEXy1Xx8W2Gg&s"
-        },
-        {
-            "id": 7,
+  "artworks": [
+    {
+      "id": 1,
+      "title": "Sunset Serenity",
+      "artist": "Elena Ramirez",
+      "location": "Central Park",
+      "image": "https://images.saatchiart.com/saatchi/1085747/art/5291059/4360875-HSC00001-32.jpg",
+      "details": "Warm sunset hues in Central Park, capturing a moment of peace."
+    },
+    {
+      "id": 2,
+      "title": "Urban Geometry",
+      "artist": "Kenji Tanaka",
+      "location": "City Hall Plaza",
+      "image": "https://artlogic-res.cloudinary.com/w_1200,c_limit,f_auto,fl_lossy,q_auto/ws-kushfineartltd/usr/images/artworks/main_image/items/57/570548f9fffd4ec495a0611d3f07cd2b/urban-geometry_oil-on-canvas_v.kush-1160.jpg?focal=49,51",
+      "details": "City Hall Plaza's lines and shapes, exploring urban energy."
+    },
+    {
+      "id": 3,
+      "title": "Whispering Woods",
+      "artist": "Aisha Khan",
+      "location": "Forest Trail",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzWOw1NQctqTuc7kIXKX_eKXpmTGeeSHJZaQ&s",
+      "details": "Serene forest scene, with cool tones and detailed textures."
+    },
+    {
+      "id": 4,
+      "title": "Crimson Woods",
+      "artist": "Ricardo Silver",
+      "location": "Botanical Gardens",
+      "image": "https://artlovers-media-upload2.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2024/04/16000259/Crimson-Woods-small-1-800x598.jpg",
+      "details": "Vibrant autumn colors in the Botanical Gardens, bold and warm."
+    },
+    {
+      "id": 5,
+      "title": "Oceans Embrace",
+      "artist": "Sophie Dubois",
+      "location": "Coastal Viewpoint",
+      "image": "https://images.saatchiart.com/saatchi/1501905/art/9354825/8417933-HUHQNOVE-7.jpg",
+      "details": "Vast sea view from the coast, with deep blues and whites."
+    },
+    {
+      "id": 6,
+      "title": "Starlight Dance",
+      "artist": "Omar Hassan",
+      "location": "Observatory Hill",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfMkvZS4W8_C6Spl8ek-PcsXEXy1Xx8W2Gg&s",
+      "details": "Stars illuminating the night sky, a celestial dance."
+    },
+    {
+      "id": 7,
       "title": "Golden Fields",
       "artist": "Li Wei",
       "location": "Countryside Farm",
-      "image": "https://img.artpal.com/992591/4-20-12-14-6-9-37m.jpg"
+      "image": "https://img.artpal.com/992591/4-20-12-14-6-9-37m.jpg",
+      "details": "Rural beauty and peace, golden fields under a warm sun."
     },
     {
       "id": 8,
       "title": "Misty Mountains",
       "artist": "Isabella Rossi",
       "location": "Mountain Range",
-      "image": "https://media.posterlounge.com/img/products/760000/757600/757600_poster.jpg"
+      "image": "https://media.posterlounge.com/img/products/760000/757600/757600_poster.jpg",
+      "details": "Ethereal mountains in mist, with soft, blended strokes."
     },
     {
       "id": 9,
       "title": "Desert Dreams",
       "artist": "Karim Aziz",
       "location": "Desert Oasis",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcR7SknEvTgKhcbjlfcC3W_hN2o45ZHpOzlA&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcR7SknEvTgKhcbjlfcC3W_hN2o45ZHpOzlA&s",
+      "details": "Desert beauty and solitude, warm tones and sweeping lines."
     },
     {
       "id": 10,
       "title": "Neon Cityscape",
       "artist": "Maya Patel",
       "location": "Metropolitan Hub",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw8jVqwfP0NN-Best1b4U8GLtmcklj60soJw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw8jVqwfP0NN-Best1b4U8GLtmcklj60soJw&s",
+      "details": "Vibrant city life at night, with bright, contrasting colors."
     },
     {
       "id": 11,
       "title": "Autumn Hues",
       "artist": "David Chen",
       "location": "Autumn Park",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1syShgBSLNrGyM7nC_6eQoRrdI6qwqSw34w&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1syShgBSLNrGyM7nC_6eQoRrdI6qwqSw34w&s",
+      "details": "Rich autumn colors in the park, a sense of nostalgia."
     },
     {
       "id": 12,
       "title": "Winter Solace",
       "artist": "Nadia Sokolov",
       "location": "Snowy Village",
-      "image": "https://render.fineartamerica.com/images/images-new-artwork/images/artworkimages/medium/1/winter-solstice-donald-maier.jpg"
+      "image": "https://render.fineartamerica.com/images/images-new-artwork/images/artworkimages/medium/1/winter-solstice-donald-maier.jpg",
+      "details": "Quiet beauty of a snowy village, cool tones and peace."
     }
-        
-    ]
+  ]
 }

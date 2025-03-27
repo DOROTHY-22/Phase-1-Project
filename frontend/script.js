@@ -29,7 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `).join('');
     }
-
+    const artworkElements = document.querySelectorAll('.artwork');
+    artworkElements.forEach(artworkElement => {
+        artworkElement.addEventListener('click', () => {
+            const artworkId = parseInt(artworkElement.dataset.artworkId);
+            const selectedArtwork = artworks.find(artwork => artwork.id === artworkId);
+            if (selectedArtwork) {
+                displayArtworkDetails(selectedArtwork);
+            }
+        });
     // Filter by Artist (Event Listener 1)
     artistFilter.addEventListener('input', () => {
         const artist = artistFilter.value.toLowerCase();
