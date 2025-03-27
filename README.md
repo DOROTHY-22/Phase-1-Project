@@ -45,9 +45,9 @@ My Art Gallery is a single-page web application that allows users to explore a c
         * python: `python -m http.server`
         * node: `npx serve`
 
-**Link to Live Site (GitHub Pages):**
+**Link to Live Site (Render):**
 
-[Your GitHub Pages Link Here] (If you have deployed it to GitHub Pages)
+[https://phase-1-project-frontend.onrender.com] (the link used to deploy in render)
 
 **Copyright and License Information:**
 
