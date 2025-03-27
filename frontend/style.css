@@ -1,74 +1,52 @@
 body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url(./home.jpg);
-    background-size: cover;
-    
-    
-    
-    
 }
 
-.page{
-    padding: 20px;
-    position: relative;
-}
-#goHome{
-    text-decoration: none;
-    color: blue;
-}
-#homePage {
-    text-align: center;
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    color: blue;
-    margin-top: 15%;
-    
-}
-#homePage h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-
-}
-#homePage button {
-    padding: 5px 15px;
-    font-size: 1.2em;
-    cursor: pointer;
 }
 
-.controls {
-    padding: 10px;
-    background-image: url(./home.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
-#artContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+#artSlider {
+    display: flex;
+    width: fit-content;
+    animation: slide 30s linear infinite;
 }
 
-#artContainer.list-view {
-    display: block;
+#artSlider img {
+    height: 500px;
+    margin: 0 20px;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.artwork {
-    border: 1px solid #ddd;
-    padding: 15px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.artwork img {
-    max-width: 100%;
-    height: auto;
-}
-#viewGallery{
-    background-color:red;
-    color:white;
-    margin: 0;
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }

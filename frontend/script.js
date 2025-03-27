@@ -1,14 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const homePage =document.getElementById('homePage');
+    const artSlider = document.getElementById('artSlider');
     const galleryPage = document.getElementById('galleryPage');
-    const viewGalleryButton = document.getElementById('viewGallery');
+    const goHome = document.getElementById('goHome');
     const artContainer = document.getElementById('artContainer');
     const artistFilter = document.getElementById('artistFilter');
     const toggleViewButton = document.getElementById('toggleView');
-    const goHome = document.getElementById('goHome')
     let artworks = [];
 
-    // Fetch Artworks from JSON Server
+    // Fetch Artworks for the slider
+    fetch('https://phase-1-project-backend.onrender.com/artworks')
+        .then(response => response.json())
+        .then(sliderArtworks => {
+            sliderArtworks.forEach(artwork => {
+                const img = document.createElement('img');
+                img.src = artwork.image;
+                img.alt = artwork.title;
+                artSlider.appendChild(img);
+            });
+             artSlider.style.width = `${sliderArtworks.length * 540}px`;
+        });
+
+    // Fetch Artworks for the gallery page
     function fetchArtworks() {
         fetch('https://phase-1-project-backend.onrender.com/artworks')
             .then(response => response.json())
@@ -18,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // Display Artworks
+    // Display Artworks in the gallery page
     function displayArtworks(artworksToDisplay) {
         artContainer.innerHTML = artworksToDisplay.map(artwork => `
             <div class="artwork">
@@ -30,31 +42,32 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // Filter by Artist (Event Listener 1)
+    // Filter by Artist
     artistFilter.addEventListener('input', () => {
         const artist = artistFilter.value.toLowerCase();
         const filteredArtworks = artworks.filter(artwork => artwork.artist.toLowerCase().includes(artist));
         displayArtworks(filteredArtworks);
     });
 
-    // Toggle View (Event Listener 2)
+    // Toggle View
     toggleViewButton.addEventListener('click', () => {
         artContainer.classList.toggle('list-view');
     });
-    
-    goHome.addEventListener('click',(event) =>{
-    event.preventDefault();
-    galleryPage.style.display = 'none';
-    homePage.style.display = 'block';
-});
-        // View Gallery Button (Event Listener 4)
-    viewGalleryButton.addEventListener('click', () => {
-        homePage.style.display = 'none';
+
+    // Go Home
+    goHome.addEventListener('click', (event) => {
+        event.preventDefault();
+        galleryPage.style.display = 'none';
+    });
+
+    // View Gallery click event
+    document.querySelector('nav a').addEventListener('click', (event) => {
+        event.preventDefault();
         galleryPage.style.display = 'block';
         fetchArtworks();
     });
 
-    // Mouseover Artwork (Event Listener 4)
+    // Mouseover Artwork
     artContainer.addEventListener('mouseover', (event) => {
         if (event.target.classList.contains('artwork')) {
             event.target.style.backgroundColor = 'white';
@@ -62,15 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     artContainer.addEventListener('mouseout', (event) => {
-      if (event.target.classList.contains('artwork')) {
-        event.target.style.backgroundColor = 'pink';
-      }
-    });
-    artContainer.addEventListener('mouseover',(event)=> {
-        if(event.target.classList.contains('artwork')){
-            
+        if (event.target.classList.contains('artwork')) {
+            event.target.style.backgroundColor = 'pink';
         }
-    })
-    
-    fetchArtworks();
-        });
+    });
+});
