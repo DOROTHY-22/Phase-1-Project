@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const artSlider = document.getElementById('artSlider');
-    const galleryPage = document.getElementById('galleryPage');
+    const galleryPage = document.getElementById('navViewGallery');
     const goHome = document.getElementById('goHome');
     const artContainer = document.getElementById('artContainer');
     const artistFilter = document.getElementById('artistFilter');
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // View Gallery click event
-    document.querySelector('nav a').addEventListener('click', (event) => {
+    navViewGallery.addEventListener('click', (event) => { 
         event.preventDefault();
         galleryPage.style.display = 'block';
         fetchArtworks();
