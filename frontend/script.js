@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const artistFilter = document.getElementById('artistFilter');
     const toggleViewButton = document.getElementById('toggleView');
     const viewGalleryButton = document.getElementById('viewGallery');
+    const homePage = document.querySelector('nav').parentElement; 
 
     let artworks = [];
 
@@ -63,10 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
     goHome.addEventListener('click', (event) => {
         event.preventDefault();
         galleryPage.style.display = 'none';
+        homePage.style.display = 'block'; 
+
     });
 
     // View Gallery click event
     viewGalleryButton.addEventListener('click', () => {
+        event.preventDefault();
         homePage.style.display = 'none';
         galleryPage.style.display = 'block';
         fetchArtworks();
