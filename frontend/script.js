@@ -66,16 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         event.target.style.backgroundColor = 'pink';
       }
     });
-    const artworkElements = document.querySelectorAll('.artwork');
-        artworkElements.forEach(artworkElement => {
-            artworkElement.addEventListener('mouseover', () => {
-                const artworkId = parseInt(artworkElement.dataset.artworkId);
-                const selectedArtwork = artworks.find(artwork => artwork.id === artworkId);
-                if (selectedArtwork) {
-                    displayArtworkDetails(selectedArtwork);
-                }
-            });
-
+    
     fetchArtworks();
         });
-    });
