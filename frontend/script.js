@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // View Gallery click event
     navViewGallery.addEventListener('click', (event) => { 
         event.preventDefault();
+        console.log("View Gallery button clicked!"); 
+
         galleryPage.style.display = 'block';
         fetchArtworks();
     });
