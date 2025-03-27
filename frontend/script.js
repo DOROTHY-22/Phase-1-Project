@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Gallery Page element:", galleryPage); 
         galleryPage.style.display = 'block';
         fetchArtworks();
+        console.log("event listener worked !");
     });
 
     // Mouseover Artwork
